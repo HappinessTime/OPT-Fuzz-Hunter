@@ -1,0 +1,483 @@
+/home/cc/.local/lib/python3.8/site-packages/cffi/cparser.py:163: UserWarning: Global variable 'r' in cdef(): for consistency with C it should have a storage class specifier (usually 'extern')
+  warnings.warn("Global variable '%s' in cdef(): for consistency "
+[2021-11-08 19:34:45,440: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERYD_PREFETCH_MULTIPLIER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the worker_prefetch_multiplier instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,442: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ACKS_LATE' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_acks_late instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,443: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ROUTES' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_routes instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,444: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2021-11-08 19:34:45,787: INFO/MainProcess] Connected to redis://127.0.0.1:6379//
+[2021-11-08 19:34:45,857: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-08 19:34:46,942: INFO/MainProcess] mingle: sync with 1 nodes
+[2021-11-08 19:34:46,947: INFO/MainProcess] mingle: sync complete
+[2021-11-08 19:34:46,986: INFO/MainProcess] celery@fuzzer.cc-virtual-machine ready.
+[2021-11-08 19:51:09,251: INFO/MainProcess] Task tasks.fuzz[f521de06-b326-4f6e-82b7-cd7ece245063] received
+[2021-11-08 19:51:09,256: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 19:51:09,257: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 19:51:09,257: ERROR/ForkPoolWorker-1] AFL Error: Pipe at the beginning of core_pattern
+[2021-11-08 19:51:09,276: ERROR/ForkPoolWorker-1] Task tasks.fuzz[f521de06-b326-4f6e-82b7-cd7ece245063] raised unexpected: InstallError("execute 'echo core | sudo tee /proc/sys/kernel/core_pattern'")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 49, in __init__
+    Fuzzer._perform_env_checks()
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 505, in _perform_env_checks
+    raise InstallError("execute 'echo core | sudo tee /proc/sys/kernel/core_pattern'")
+fuzzer.fuzzer.InstallError: execute 'echo core | sudo tee /proc/sys/kernel/core_pattern'
+[2021-11-08 19:52:12,948: INFO/MainProcess] Task tasks.fuzz[77df0018-24e6-4cd3-8cd8-1ccca90bacaf] received
+[2021-11-08 19:53:36,356: INFO/MainProcess] Task tasks.fuzz[dbb4bd10-96a6-4c77-adf3-461db58ca9dc] received
+[2021-11-08 19:53:36,358: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 19:53:36,358: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 19:53:36,358: ERROR/ForkPoolWorker-1] AFL Error: Pipe at the beginning of core_pattern
+[2021-11-08 19:53:36,364: ERROR/ForkPoolWorker-1] Task tasks.fuzz[dbb4bd10-96a6-4c77-adf3-461db58ca9dc] raised unexpected: InstallError("execute 'echo core | sudo tee /proc/sys/kernel/core_pattern'")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 49, in __init__
+    Fuzzer._perform_env_checks()
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 505, in _perform_env_checks
+    raise InstallError("execute 'echo core | sudo tee /proc/sys/kerne[2021-11-08 21:47:02,507: INFO/MainProcess] Task tasks.fuzz[fafe853a-c4ba-40f0-9fac-1f615da07c36] received
+[2021-11-08 21:55:23,299: INFO/MainProcess] sync with celery@concolic.cc-virtual-machine
+[2021-11-08 22:04:13,590: INFO/MainProcess] Task tasks.fuzz[56141310-aee6-451a-b5ac-02cf3a88a08c] received
+[2021-11-08 22:04:13,594: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:04:13,594: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:04:13,619: ERROR/ForkPoolWorker-1] Task tasks.fuzz[56141310-aee6-451a-b5ac-02cf3a88a08c] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+[2021-11-08 22:06:45,234: INFO/MainProcess] Task tasks.fuzz[5d0982c8-1729-432a-a45e-940c316549a6] received
+[2021-11-08 22:06:45,235: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:06:45,235: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:06:45,244: ERROR/ForkPoolWorker-1] Task tasks.fuzz[5d0982c8-1729-432a-a45e-940c316549a6] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+[2021-11-08 22:09:27,385: INFO/MainProcess] Task tasks.fuzz[6d5bc2dd-b2c9-413e-aabe-6da2c1765a34] received
+[2021-11-08 22:09:27,386: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:09:27,386: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:09:27,390: ERROR/ForkPoolWorker-1] Task tasks.fuzz[6d5bc2dd-b2c9-413e-aabe-6da2c1765a34] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+[2021-11-08 22:22:00,894: INFO/MainProcess] Task tasks.fuzz[0979d5d8-2470-435e-a139-dfae58de00e9] received
+[2021-11-08 22:22:00,895: INFO/ForkPoolWorker-1] beginning to fuzz "test2"
+[2021-11-08 22:22:00,895: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:22:00,902: ERROR/ForkPoolWorker-1] Task tasks.fuzz[0979d5d8-2470-435e-a139-dfae58de00e9] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+[2021-11-08 22:22:25,823: INFO/MainProcess] Task tasks.fuzz[46b4b2f6-5b01-4035-add8-5eb4b1367835] received
+[2021-11-08 22:22:25,824: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:22:25,824: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:22:25,826: ERROR/ForkPoolWorker-1] Task tasks.fuzz[46b4b2f6-5b01-4035-add8-5eb4b1367835] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+[2021-11-08 22:23:07,076: INFO/MainProcess] Task tasks.fuzz[1651e3ab-7528-4f20-b29a-3db0ca3116d8] received
+[2021-11-08 22:23:07,077: INFO/ForkPoolWorker-1] beginning to fuzz "test1"
+[2021-11-08 22:23:07,077: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:23:07,088: ERROR/ForkPoolWorker-1] Task tasks.fuzz[1651e3ab-7528-4f20-b29a-3db0ca3116d8] raised unexpected: NameError("name 'basestring' is not defined")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 51, in __init__
+    if isinstance(binary_path,str):
+NameError: name 'basestring' is not defined
+:56:20,577: INFO/ForkPoolWorker-1] Mapping cle##tls at 0x3000000
+[2021-11-08 21:56:20,578: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/ld-2.31.so
+[2021-11-08 21:56:20,579: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/libc-2.31.so
+[2021-11-08 21:56:20,605: INFO/ForkPoolWorker-1] Relocating /home/cc/defectMining/binarys/test0
+[2021-11-08 21:56:20,608: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __libc_start_main from libc.so.0
+[2021-11-08 21:56:20,609: INFO/ForkPoolWorker-1] Using builtin SimProcedure for write from libc.so.0
+[2021-11-08 21:56:20,609: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __stack_chk_fail from libc.so.0
+[2021-11-08 21:56:20,609: INFO/ForkPoolWorker-1] Using builtin SimProcedure for close from libc.so.0
+[2021-11-08 21:56:20,610: INFO/ForkPoolWorker-1] Using builtin SimProcedure for read from libc.so.0
+[2021-11-08 21:56:20,610: INFO/ForkPoolWorker-1] Using builtin SimProcedure for atoi from libc.so.0
+[2021-11-08 21:56:20,610: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __isoc99_scanf from libc.so.0
+[2021-11-08 21:56:20,610: INFO/ForkPoolWorker-1] Using builtin SimProcedure for fork from libc.so.0
+[2021-11-08 21:56:20,611: INFO/ForkPoolWorker-1] Mapping cle##externs at 0x4000000
+[2021-11-08 21:56:20,641: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,654: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 21:56:20,666: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,672: ERROR/ForkPoolWorker-1] Resolver at 0x10a2900 failed to resolve!
+[2021-11-08 21:56:20,683: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,685: ERROR/ForkPoolWorker-1] Resolver at 0x10a3930 failed to resolve!
+[2021-11-08 21:56:20,697: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,707: ERROR/ForkPoolWorker-1] Resolver at 0x10a2220 failed to resolve!
+[2021-11-08 21:56:20,713: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,723: ERROR/ForkPoolWorker-1] Resolver at 0x10a2960 failed to resolve!
+[2021-11-08 21:56:20,736: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,738: ERROR/ForkPoolWorker-1] Resolver at 0x10a4dd0 failed to resolve!
+[2021-11-08 21:56:20,759: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,762: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 21:56:20,777: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,779: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9a0 failed to resolve!
+[2021-11-08 21:56:20,792: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,794: ERROR/ForkPoolWorker-1] Resolver at 0x10a3760 failed to resolve!
+[2021-11-08 21:56:20,809: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,811: ERROR/ForkPoolWorker-1] Resolver at 0x10a3590 failed to resolve!
+[2021-11-08 21:56:20,823: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,826: ERROR/ForkPoolWorker-1] Resolver at 0x10a2890 failed to resolve!
+[2021-11-08 21:56:20,838: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,841: ERROR/ForkPoolWorker-1] Resolver at 0x10a22d0 failed to resolve!
+[2021-11-08 21:56:20,858: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,861: ERROR/ForkPoolWorker-1] Resolver at 0x10a36c0 failed to resolve!
+[2021-11-08 21:56:20,873: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,875: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 21:56:20,893: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,895: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 21:56:20,904: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,906: ERROR/ForkPoolWorker-1] Resolver at 0x10a23b0 failed to resolve!
+[2021-11-08 21:56:20,917: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,925: ERROR/ForkPoolWorker-1] Resolver at 0x10a3980 failed to resolve!
+[2021-11-08 21:56:20,934: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,939: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 21:56:20,951: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,953: ERROR/ForkPoolWorker-1] Resolver at 0x10a2350 failed to resolve!
+[2021-11-08 21:56:20,964: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,966: ERROR/ForkPoolWorker-1] Resolver at 0x10a3ad0 failed to resolve!
+[2021-11-08 21:56:20,978: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,986: ERROR/ForkPoolWorker-1] Resolver at 0x10c10d0 failed to resolve!
+[2021-11-08 21:56:20,991: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:20,998: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 21:56:21,003: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,013: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 21:56:21,023: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,030: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9e0 failed to resolve!
+[2021-11-08 21:56:21,042: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,049: ERROR/ForkPoolWorker-1] Resolver at 0x10a29a0 failed to resolve!
+[2021-11-08 21:56:21,058: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,070: ERROR/ForkPoolWorker-1] Resolver at 0x10a2280 failed to resolve!
+[2021-11-08 21:56:21,078: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,089: ERROR/ForkPoolWorker-1] Resolver at 0x10a27b0 failed to resolve!
+[2021-11-08 21:56:21,103: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,105: ERROR/ForkPoolWorker-1] Resolver at 0x10abd20 failed to resolve!
+[2021-11-08 21:56:21,115: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,125: ERROR/ForkPoolWorker-1] Resolver at 0x10a39d0 failed to resolve!
+[2021-11-08 21:56:21,150: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,154: ERROR/ForkPoolWorker-1] Resolver at 0x10a3550 failed to resolve!
+[2021-11-08 21:56:21,167: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,169: ERROR/ForkPoolWorker-1] Resolver at 0x10bfab0 failed to resolve!
+[2021-11-08 21:56:21,183: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,186: ERROR/ForkPoolWorker-1] Resolver at 0x10a2c60 failed to resolve!
+[2021-11-08 21:56:21,195: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,202: ERROR/ForkPoolWorker-1] Resolver at 0x10a38d0 failed to resolve!
+[2021-11-08 21:56:21,211: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,219: ERROR/ForkPoolWorker-1] Resolver at 0x10a3870 failed to resolve!
+[2021-11-08 21:56:21,230: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,237: ERROR/ForkPoolWorker-1] Resolver at 0x10bfea0 failed to resolve!
+[2021-11-08 21:56:21,243: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,245: ERROR/ForkPoolWorker-1] Resolver at 0x10a4e10 failed to resolve!
+[2021-11-08 21:56:21,264: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,266: ERROR/ForkPoolWorker-1] Resolver at 0x10a3a20 failed to resolve!
+[2021-11-08 21:56:21,277: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,278: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 21:56:21,289: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,293: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 21:56:21,302: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 21:56:21,306: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 21:56:21,307: INFO/ForkPoolWorker-1] Mapping cle##kernel at 0x5000000
+[2021-11-08 21:56:21,316: ERROR/ForkPoolWorker-1] Task tasks.fuzz[63be9784-d666-4fca-8f34-200ff8c7b2d9] raised unexpected: AttributeError("'Loader' object has no attribute 'main_bin'")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 113, in __init__
+    self.os = p.loader.main_bin.os
+AttributeError: 'Loader' object has no attribute 'main_bin'
+[2021-11-08 22:04:58,520: INFO/MainProcess] Task tasks.fuzz[572e4f8f-0864-4077-8469-feb443564243] received
+[2021-11-08 22:04:58,521: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:04:58,522: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:04:58,522: INFO/ForkPoolWorker-1] Loading binary binarys/test0
+[2021-11-08 22:04:58,534: INFO/ForkPoolWorker-1] loading binarys/test0...
+[2021-11-08 22:04:58,607: INFO/ForkPoolWorker-1] Loading libc.so.6...
+[2021-11-08 22:04:59,224: INFO/ForkPoolWorker-1] Loading ld-linux-x86-64.so.2...
+[2021-11-08 22:04:59,321: WARNING/ForkPoolWorker-1] The main binary is a position-independent executable. It is being loaded with a base address of 0x400000.
+[2021-11-08 22:04:59,321: INFO/ForkPoolWorker-1] Mapping /home/cc/defectMining/binarys/test0 at 0x400000
+[2021-11-08 22:04:59,322: INFO/ForkPoolWorker-1] Mapping /usr/lib/x86_64-linux-gnu/libc-2.31.so at 0x1000000
+[2021-11-08 22:04:59,322: INFO/ForkPoolWorker-1] Mapping /usr/lib/x86_64-linux-gnu/ld-2.31.so at 0x2000000
+[2021-11-08 22:04:59,323: INFO/ForkPoolWorker-1] Mapping cle##tls at 0x3000000
+[2021-11-08 22:04:59,324: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/ld-2.31.so
+[2021-11-08 22:04:59,324: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/libc-2.31.so
+[2021-11-08 22:04:59,352: INFO/ForkPoolWorker-1] Relocating /home/cc/defectMining/binarys/test0
+[2021-11-08 22:04:59,356: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __libc_start_main from libc.so.0
+[2021-11-08 22:04:59,356: INFO/ForkPoolWorker-1] Using builtin SimProcedure for write from libc.so.0
+[2021-11-08 22:04:59,357: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __stack_chk_fail from libc.so.0
+[2021-11-08 22:04:59,357: INFO/ForkPoolWorker-1] Using builtin SimProcedure for close from libc.so.0
+[2021-11-08 22:04:59,357: INFO/ForkPoolWorker-1] Using builtin SimProcedure for read from libc.so.0
+[2021-11-08 22:04:59,357: INFO/ForkPoolWorker-1] Using builtin SimProcedure for atoi from libc.so.0
+[2021-11-08 22:04:59,357: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __isoc99_scanf from libc.so.0
+[2021-11-08 22:04:59,358: INFO/ForkPoolWorker-1] Using builtin SimProcedure for fork from libc.so.0
+[2021-11-08 22:04:59,358: INFO/ForkPoolWorker-1] Mapping cle##externs at 0x4000000
+[2021-11-08 22:04:59,384: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,387: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 22:04:59,407: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,411: ERROR/ForkPoolWorker-1] Resolver at 0x10a2900 failed to resolve!
+[2021-11-08 22:04:59,426: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,434: ERROR/ForkPoolWorker-1] Resolver at 0x10a3930 failed to resolve!
+[2021-11-08 22:04:59,447: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,454: ERROR/ForkPoolWorker-1] Resolver at 0x10a2220 failed to resolve!
+[2021-11-08 22:04:59,470: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,475: ERROR/ForkPoolWorker-1] Resolver at 0x10a2960 failed to resolve!
+[2021-11-08 22:04:59,492: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,495: ERROR/ForkPoolWorker-1] Resolver at 0x10a4dd0 failed to resolve!
+[2021-11-08 22:04:59,513: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,518: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 22:04:59,536: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,542: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9a0 failed to resolve!
+[2021-11-08 22:04:59,559: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,567: ERROR/ForkPoolWorker-1] Resolver at 0x10a3760 failed to resolve!
+[2021-11-08 22:04:59,585: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,589: ERROR/ForkPoolWorker-1] Resolver at 0x10a3590 failed to resolve!
+[2021-11-08 22:04:59,602: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,613: ERROR/ForkPoolWorker-1] Resolver at 0x10a2890 failed to resolve!
+[2021-11-08 22:04:59,624: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,626: ERROR/ForkPoolWorker-1] Resolver at 0x10a22d0 failed to resolve!
+[2021-11-08 22:04:59,644: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,652: ERROR/ForkPoolWorker-1] Resolver at 0x10a36c0 failed to resolve!
+[2021-11-08 22:04:59,662: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,668: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 22:04:59,682: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,688: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 22:04:59,708: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,713: ERROR/ForkPoolWorker-1] Resolver at 0x10a23b0 failed to resolve!
+[2021-11-08 22:04:59,728: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,730: ERROR/ForkPoolWorker-1] Resolver at 0x10a3980 failed to resolve!
+[2021-11-08 22:04:59,747: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,749: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 22:04:59,761: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,763: ERROR/ForkPoolWorker-1] Resolver at 0x10a2350 failed to resolve!
+[2021-11-08 22:04:59,782: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,787: ERROR/ForkPoolWorker-1] Resolver at 0x10a3ad0 failed to resolve!
+[2021-11-08 22:04:59,797: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,805: ERROR/ForkPoolWorker-1] Resolver at 0x10c10d0 failed to resolve!
+[2021-11-08 22:04:59,819: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,821: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 22:04:59,836: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,838: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 22:04:59,846: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,851: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9e0 failed to resolve!
+[2021-11-08 22:04:59,863: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,865: ERROR/ForkPoolWorker-1] Resolver at 0x10a29a0 failed to resolve!
+[2021-11-08 22:04:59,874: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,885: ERROR/ForkPoolWorker-1] Resolver at 0x10a2280 failed to resolve!
+[2021-11-08 22:04:59,900: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,901: ERROR/ForkPoolWorker-1] Resolver at 0x10a27b0 failed to resolve!
+[2021-11-08 22:04:59,911: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,918: ERROR/ForkPoolWorker-1] Resolver at 0x10abd20 failed to resolve!
+[2021-11-08 22:04:59,930: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,936: ERROR/ForkPoolWorker-1] Resolver at 0x10a39d0 failed to resolve!
+[2021-11-08 22:04:59,946: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,949: ERROR/ForkPoolWorker-1] Resolver at 0x10a3550 failed to resolve!
+[2021-11-08 22:04:59,961: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,968: ERROR/ForkPoolWorker-1] Resolver at 0x10bfab0 failed to resolve!
+[2021-11-08 22:04:59,980: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,982: ERROR/ForkPoolWorker-1] Resolver at 0x10a2c60 failed to resolve!
+[2021-11-08 22:04:59,996: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:04:59,998: ERROR/ForkPoolWorker-1] Resolver at 0x10a38d0 failed to resolve!
+[2021-11-08 22:05:00,009: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,016: ERROR/ForkPoolWorker-1] Resolver at 0x10a3870 failed to resolve!
+[2021-11-08 22:05:00,026: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,030: ERROR/ForkPoolWorker-1] Resolver at 0x10bfea0 failed to resolve!
+[2021-11-08 22:05:00,049: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,051: ERROR/ForkPoolWorker-1] Resolver at 0x10a4e10 failed to resolve!
+[2021-11-08 22:05:00,064: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,066: ERROR/ForkPoolWorker-1] Resolver at 0x10a3a20 failed to resolve!
+[2021-11-08 22:05:00,078: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,079: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 22:05:00,092: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,093: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 22:05:00,105: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:05:00,106: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 22:05:00,114: INFO/ForkPoolWorker-1] Mapping cle##kernel at 0x5000000
+[2021-11-08 22:05:00,120: ERROR/ForkPoolWorker-1] Task tasks.fuzz[572e4f8f-0864-4077-8469-feb443564243] raised unexpected: AttributeError("'Loader' object has no attribute 'main_bin'")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 113, in __init__
+    #self.os = p.loader.main_bin.os
+AttributeError: 'Loader' object has no attribute 'main_bin'
+[2021-11-08 22:21:24,693: INFO/MainProcess] Task tasks.fuzz[4d411ffc-250d-4399-b520-fe54780fb07c] received
+[2021-11-08 22:21:24,694: INFO/ForkPoolWorker-1] beginning to fuzz "test0"
+[2021-11-08 22:21:24,695: WARNING/ForkPoolWorker-1] unable to find pcap file, will seed fuzzer with the default
+[2021-11-08 22:21:24,696: INFO/ForkPoolWorker-1] Loading binary binarys/test0
+[2021-11-08 22:21:24,711: INFO/ForkPoolWorker-1] loading binarys/test0...
+[2021-11-08 22:21:24,809: INFO/ForkPoolWorker-1] Loading libc.so.6...
+[2021-11-08 22:21:25,434: INFO/ForkPoolWorker-1] Loading ld-linux-x86-64.so.2...
+[2021-11-08 22:21:25,512: WARNING/ForkPoolWorker-1] The main binary is a position-independent executable. It is being loaded with a base address of 0x400000.
+[2021-11-08 22:21:25,512: INFO/ForkPoolWorker-1] Mapping /home/cc/defectMining/binarys/test0 at 0x400000
+[2021-11-08 22:21:25,512: INFO/ForkPoolWorker-1] Mapping /usr/lib/x86_64-linux-gnu/libc-2.31.so at 0x1000000
+[2021-11-08 22:21:25,513: INFO/ForkPoolWorker-1] Mapping /usr/lib/x86_64-linux-gnu/ld-2.31.so at 0x2000000
+[2021-11-08 22:21:25,513: INFO/ForkPoolWorker-1] Mapping cle##tls at 0x3000000
+[2021-11-08 22:21:25,513: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/ld-2.31.so
+[2021-11-08 22:21:25,514: INFO/ForkPoolWorker-1] Relocating /usr/lib/x86_64-linux-gnu/libc-2.31.so
+[2021-11-08 22:21:25,533: INFO/ForkPoolWorker-1] Relocating /home/cc/defectMining/binarys/test0
+[2021-11-08 22:21:25,538: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __libc_start_main from libc.so.0
+[2021-11-08 22:21:25,539: INFO/ForkPoolWorker-1] Using builtin SimProcedure for write from libc.so.0
+[2021-11-08 22:21:25,541: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __stack_chk_fail from libc.so.0
+[2021-11-08 22:21:25,541: INFO/ForkPoolWorker-1] Using builtin SimProcedure for close from libc.so.0
+[2021-11-08 22:21:25,541: INFO/ForkPoolWorker-1] Using builtin SimProcedure for read from libc.so.0
+[2021-11-08 22:21:25,542: INFO/ForkPoolWorker-1] Using builtin SimProcedure for atoi from libc.so.0
+[2021-11-08 22:21:25,542: INFO/ForkPoolWorker-1] Using builtin SimProcedure for __isoc99_scanf from libc.so.0
+[2021-11-08 22:21:25,542: INFO/ForkPoolWorker-1] Using builtin SimProcedure for fork from libc.so.0
+[2021-11-08 22:21:25,545: INFO/ForkPoolWorker-1] Mapping cle##externs at 0x4000000
+[2021-11-08 22:21:25,558: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,570: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 22:21:25,582: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,590: ERROR/ForkPoolWorker-1] Resolver at 0x10a2900 failed to resolve!
+[2021-11-08 22:21:25,604: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,606: ERROR/ForkPoolWorker-1] Resolver at 0x10a3930 failed to resolve!
+[2021-11-08 22:21:25,620: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,622: ERROR/ForkPoolWorker-1] Resolver at 0x10a2220 failed to resolve!
+[2021-11-08 22:21:25,634: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,644: ERROR/ForkPoolWorker-1] Resolver at 0x10a2960 failed to resolve!
+[2021-11-08 22:21:25,657: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,663: ERROR/ForkPoolWorker-1] Resolver at 0x10a4dd0 failed to resolve!
+[2021-11-08 22:21:25,679: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,690: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 22:21:25,706: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,714: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9a0 failed to resolve!
+[2021-11-08 22:21:25,726: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,732: ERROR/ForkPoolWorker-1] Resolver at 0x10a3760 failed to resolve!
+[2021-11-08 22:21:25,748: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,757: ERROR/ForkPoolWorker-1] Resolver at 0x10a3590 failed to resolve!
+[2021-11-08 22:21:25,772: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,774: ERROR/ForkPoolWorker-1] Resolver at 0x10a2890 failed to resolve!
+[2021-11-08 22:21:25,790: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,795: ERROR/ForkPoolWorker-1] Resolver at 0x10a22d0 failed to resolve!
+[2021-11-08 22:21:25,820: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,833: ERROR/ForkPoolWorker-1] Resolver at 0x10a36c0 failed to resolve!
+[2021-11-08 22:21:25,857: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,864: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 22:21:25,889: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,897: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 22:21:25,914: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,923: ERROR/ForkPoolWorker-1] Resolver at 0x10a23b0 failed to resolve!
+[2021-11-08 22:21:25,953: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,959: ERROR/ForkPoolWorker-1] Resolver at 0x10a3980 failed to resolve!
+[2021-11-08 22:21:25,974: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,980: ERROR/ForkPoolWorker-1] Resolver at 0x10bfe60 failed to resolve!
+[2021-11-08 22:21:25,989: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:25,997: ERROR/ForkPoolWorker-1] Resolver at 0x10a2350 failed to resolve!
+[2021-11-08 22:21:26,017: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,019: ERROR/ForkPoolWorker-1] Resolver at 0x10a3ad0 failed to resolve!
+[2021-11-08 22:21:26,033: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,042: ERROR/ForkPoolWorker-1] Resolver at 0x10c10d0 failed to resolve!
+[2021-11-08 22:21:26,053: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,060: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 22:21:26,074: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,078: ERROR/ForkPoolWorker-1] Resolver at 0x10bff30 failed to resolve!
+[2021-11-08 22:21:26,094: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,104: ERROR/ForkPoolWorker-1] Resolver at 0x10bf9e0 failed to resolve!
+[2021-11-08 22:21:26,115: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,122: ERROR/ForkPoolWorker-1] Resolver at 0x10a29a0 failed to resolve!
+[2021-11-08 22:21:26,126: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,139: ERROR/ForkPoolWorker-1] Resolver at 0x10a2280 failed to resolve!
+[2021-11-08 22:21:26,152: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,154: ERROR/ForkPoolWorker-1] Resolver at 0x10a27b0 failed to resolve!
+[2021-11-08 22:21:26,169: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,177: ERROR/ForkPoolWorker-1] Resolver at 0x10abd20 failed to resolve!
+[2021-11-08 22:21:26,189: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,196: ERROR/ForkPoolWorker-1] Resolver at 0x10a39d0 failed to resolve!
+[2021-11-08 22:21:26,213: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,220: ERROR/ForkPoolWorker-1] Resolver at 0x10a3550 failed to resolve!
+[2021-11-08 22:21:26,237: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,246: ERROR/ForkPoolWorker-1] Resolver at 0x10bfab0 failed to resolve!
+[2021-11-08 22:21:26,257: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,266: ERROR/ForkPoolWorker-1] Resolver at 0x10a2c60 failed to resolve!
+[2021-11-08 22:21:26,280: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,285: ERROR/ForkPoolWorker-1] Resolver at 0x10a38d0 failed to resolve!
+[2021-11-08 22:21:26,299: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,303: ERROR/ForkPoolWorker-1] Resolver at 0x10a3870 failed to resolve!
+[2021-11-08 22:21:26,320: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,324: ERROR/ForkPoolWorker-1] Resolver at 0x10bfea0 failed to resolve!
+[2021-11-08 22:21:26,339: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,342: ERROR/ForkPoolWorker-1] Resolver at 0x10a4e10 failed to resolve!
+[2021-11-08 22:21:26,360: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,364: ERROR/ForkPoolWorker-1] Resolver at 0x10a3a20 failed to resolve!
+[2021-11-08 22:21:26,380: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,383: ERROR/ForkPoolWorker-1] Resolver at 0x10bf960 failed to resolve!
+[2021-11-08 22:21:26,396: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,398: ERROR/ForkPoolWorker-1] Resolver at 0x10a27f0 failed to resolve!
+[2021-11-08 22:21:26,412: INFO/ForkPoolWorker-1] Stepping active of <SimulationManager with 1 active>
+[2021-11-08 22:21:26,416: ERROR/ForkPoolWorker-1] Resolver at 0x10a3600 failed to resolve!
+[2021-11-08 22:21:26,416: INFO/ForkPoolWorker-1] Mapping cle##kernel at 0x5000000
+[2021-11-08 22:21:26,422: ERROR/ForkPoolWorker-1] Task tasks.fuzz[4d411ffc-250d-4399-b520-fe54780fb07c] raised unexpected: AttributeError("'Loader' object has no attribute 'main_bin'")
+Traceback (most recent call last):
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/cc/defectMining/tasks.py", line 159, in fuzz
+    fzr = Fuzzer(binary_path, config.FUZZER_WORK_DIR, config.FUZZER_INSTANCES, time_limit=config.FUZZ_TIMEOUT,
+  File "/home/cc/defectMining/./fuzzer/fuzzer.py", line 113, in __init__
+    # self.os = 'cgc'
+AttributeError: 'Loader' object has no attribute 'main_bin'
+[2021-11-09 09:16:30,017: INFO/MainProcess] missed heartbeat from celery@concolic.cc-virtual-machine

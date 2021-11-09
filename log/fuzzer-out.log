@@ -1,0 +1,40 @@
+ 
+ -------------- celery@fuzzer.cc-virtual-machine v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.11.0-38-generic-x86_64-with-glibc2.29 2021-11-08 19:34:45
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7feb26962070
+- ** ---------- .> transport:   redis://127.0.0.1:6379//
+- ** ---------- .> results:     redis://127.0.0.1:6379/
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> fuzzer           exchange=fuzzer(direct) key=fuzzer
+                
+
+[tasks]
+  . tasks.drill
+  . tasks.fuzz
+
+ 
+ -------------- celery@fuzzer.cc-virtual-machine v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.11.0-38-generic-x86_64-with-glibc2.29 2021-11-08 21:55:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7f731555a730
+- ** ---------- .> transport:   redis://127.0.0.1:6379//
+- ** ---------- .> results:     redis://127.0.0.1:6379/
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> fuzzer           exchange=fuzzer(direct) key=fuzzer
+                
+
+[tasks]
+  . tasks.drill
+  . tasks.fuzz
+

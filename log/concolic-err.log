@@ -1,0 +1,61 @@
+/home/cc/.local/lib/python3.8/site-packages/cffi/cparser.py:163: UserWarning: Global variable 'r' in cdef(): for consistency with C it should have a storage class specifier (usually 'extern')
+  warnings.warn("Global variable '%s' in cdef(): for consistency "
+[2021-11-08 19:34:45,007: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERYD_PREFETCH_MULTIPLIER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the worker_prefetch_multiplier instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,010: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ROUTES' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_routes instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,010: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ACKS_LATE' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_acks_late instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 19:34:45,010: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2021-11-08 19:34:46,804: INFO/MainProcess] Connected to redis://127.0.0.1:6379//
+[2021-11-08 19:34:46,837: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-08 19:34:47,913: INFO/MainProcess] mingle: sync with 1 nodes
+[2021-11-08 19:34:47,947: INFO/MainProcess] mingle: sync complete
+[2021-11-08 19:34:48,137: INFO/MainProcess] celery@concolic.cc-virtual-machine ready.
+
+Restarting celery worker (/home/cc/.local/bin/celery -A tasks worker -c 4 -Q concolic [2021-11-08 21:55:21,964: INFO/M/home/cc/.local/lib/python3.8/site-packages/cffi/cparse[2021-11-09 09:16:30,019: INFO/MainProcess] missed heartbeat from celery@fuzzer.cc-virtual-machine
+[2021-11-09 09:16:30,025: WARNING/MainProcess] Substantial drift from celery@fuzzer.cc-virtual-machine may mean clocks are out of sync.  Current drift is
+38479 seconds.  [orig: 2021-11-09 09:16:30.025760 recv: 2021-11-08 22:35:11.368327]
+
+g: 
+    The 'CELERY_ROUTES' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_routes instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 21:55:22,166: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ACKS_LATE' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_acks_late instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 21:55:22,167: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERYD_PREFETCH_MULTIPLIER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the worker_prefetch_multiplier instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2021-11-08 21:55:22,168: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2021-11-08 21:55:23,265: INFO/MainProcess] Connected to redis://127.0.0.1:6379//
+[2021-11-08 21:55:23,282: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-08 21:55:24,321: WARNING/MainProcess] /home/cc/.local/lib/python3.8/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@fuzzer.cc-virtual-machine.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2021-11-08 21:55:24,322: INFO/MainProcess] mingle: sync with 1 nodes
+[2021-11-08 21:55:24,323: INFO/MainProcess] mingle: sync complete
+[2021-11-08 21:55:24,355: INFO/MainProcess] celery@concolic.cc-virtual-machine ready.
+[2021-11-09 09:16:31,248: INFO/MainProcess] missed heartbeat from celery@fuzzer.cc-virtual-machine

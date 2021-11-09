@@ -1,0 +1,40 @@
+ 
+ -------------- celery@concolic.cc-virtual-machine v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.11.0-38-generic-x86_64-with-glibc2.29 2021-11-08 19:34:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7fcab2e9d070
+- ** ---------- .> transport:   redis://127.0.0.1:6379//
+- ** ---------- .> results:     redis://127.0.0.1:6379/
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> concolic         exchange=concolic(direct) key=concolic
+                
+
+[tasks]
+  . tasks.drill
+  . tasks.fuzz
+
+ 
+ -------------- celery@concolic.cc-virtual-machine v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.11.0-38-generic-x86_64-with-glibc2.29 2021-11-08 21:55:22
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7f04c805c730
+- ** ---------- .> transport:   redis://127.0.0.1:6379//
+- ** ---------- .> results:     redis://127.0.0.1:6379/
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> concolic         exchange=concolic(direct) key=concolic
+                
+
+[tasks]
+  . tasks.drill
+  . tasks.fuzz
+
